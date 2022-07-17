@@ -5,5 +5,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary-200;
+    @apply bg-primary-200;
+}
+
+.tooltip {
+    @apply absolute bg-white px-2 py-1 rounded-lg shadow-lg scale-0;
 }
