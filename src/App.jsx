@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import photo from "./assets/me.jpeg";
 import Typewriter from "typewriter-effect";
 
 function App() {
@@ -97,6 +98,12 @@ function App() {
                         }}
                     />
                 </div>
+
+                <img
+                    className="w-[15rem] h-[15rem] rounded-full border-2 border-white shadow-lg mb-4"
+                    src={photo}
+                    alt="Lasse Vestergaard"
+                />
 
                 <div>
                     <Link
