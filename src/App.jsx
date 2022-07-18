@@ -6,17 +6,60 @@ function App() {
     const [about, setAbout] = useState(false);
 
     const skills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Vite",
-        "Facile CSS / Bootstrap / Tailwind CSS",
+        {
+            id: "html",
+            color: "#e34f26",
+        },
 
-        "GitHub",
+        {
+            id: "css",
+            color: "#2965f1",
+        },
+
+        {
+            id: "javascript",
+            color: "#f1e05a",
+        },
+
+        {
+            id: "react",
+            color: "#61dbfb",
+        },
+
+        {
+            id: "node",
+            color: "#43853d",
+        },
+
+        {
+            id: "mongodb",
+            color: "#00684A",
+        },
+
+        {
+            id: "vite",
+            color: "#646cff",
+        },
+
+        {
+            id: "Facile CSS",
+            color: "#ea4442",
+        },
+
+        {
+            id: "bootstrap",
+            color: "#563d7c",
+        },
+
+        {
+            id: "tailwind css",
+            color: "#0ba5e9",
+        },
+
+        {
+            id: "GitHub",
+            color: "#24292e",
+        },
     ];
 
     return (
@@ -75,11 +118,26 @@ function App() {
                         <h1 className="text-4xl font-bold text-gray-100 mb-4">
                             About Me
                         </h1>
-                        <p>
+                        <p className="mb-10">
                             I am a frontend developer, from denmark. <br></br>I
                             spend the most of my time coding. <br></br> I love
                             to learn new things. I am 16 years old.
                         </p>
+
+                        <h1 className="text-4xl font-bold text-gray-100 mb-4">
+                            Skills
+                        </h1>
+                        <ul className="text-gray-100">
+                            {skills.map((skill) => (
+                                <li
+                                    className="mb-2 uppercase"
+                                    style={{ color: skill.color }}
+                                    key={skill.id}
+                                >
+                                    {skill.id}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 )}
             </div>

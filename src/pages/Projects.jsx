@@ -11,41 +11,11 @@ function Projects() {
             url: "https://www.facilecss.com",
             github: "https://github.com/facilecss/core",
         },
-
-        {
-            id: 1,
-            name: "Facile CSS",
-            description:
-                "A simple functional CSS framework for building fast, beautiful, clean websites.",
-            image: "https://facilecss.com/icon.png",
-            url: "https://www.facilecss.com",
-            github: "https://github.com/facilecss/core",
-        },
-
-        {
-            id: 1,
-            name: "Facile CSS",
-            description:
-                "A simple functional CSS framework for building fast, beautiful, clean websites.",
-            image: "https://facilecss.com/icon.png",
-            url: "https://www.facilecss.com",
-            github: "https://github.com/facilecss/core",
-        },
-
-        {
-            id: 1,
-            name: "Facile CSS",
-            description:
-                "A simple functional CSS framework for building fast, beautiful, clean websites.",
-            image: "https://facilecss.com/icon.png",
-            url: "https://www.facilecss.com",
-            github: "https://github.com/facilecss/core",
-        },
     ];
 
     return (
         <>
-            <div className="flex flex-col justify-center items-center text-center text-white h-[68vh] md:h-[85vh]">
+            <div className="flex flex-col justify-center items-center text-center text-white h-[68vh] md:h-[85vh] mt-10">
                 <h1 className="font-edu text-5xl mb-10">My projects</h1>
                 <div className="flex flex-wrap justify-center items-center">
                     {projects.map((project) => (
