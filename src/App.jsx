@@ -1,6 +1,5 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Tooltip from "./components/Tooltip";
 
 function App() {
     return (
@@ -33,13 +32,20 @@ function App() {
                                 .deleteAll()
                                 .start();
                         }}
+                        options={{
+                            loop: true,
+                        }}
                     />
                 </div>
 
-                <button className="px-10 py-3 bg-indigo-600 rounded font-bold hover:bg-indigo-500">
-                    <i class="fa-brands fa-github"></i> Github
-                    <Tooltip text="dsa" className="group-hover:scale-100" />
-                </button>
+                <div>
+                    <button className="px-10 py-3 bg-indigo-600 rounded font-bold hover:bg-indigo-500 ml-4 shadow-lg drop-shadow-xl shadow-indigo-500">
+                        <i class="fa-solid fa-code"></i> My projects
+                    </button>
+                    <button className="px-10 py-3 bg-cyan-600 rounded font-bold hover:bg-cyan-500 ml-4 shadow-lg drop-shadow-xl shadow-cyan-500">
+                        <i class="fa-solid fa-id-card"></i> About me
+                    </button>
+                </div>
             </div>
         </>
     );
