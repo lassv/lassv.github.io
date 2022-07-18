@@ -114,14 +114,14 @@ function App() {
                     </Link>
                     <button
                         onClick={() => setAbout(!about)}
-                        className="px-10 py-3 bg-cyan-600 rounded font-bold hover:bg-cyan-500 ml-4 shadow-lg drop-shadow-xl shadow-cyan-500"
+                        className="px-10 py-3 bg-cyan-500 rounded font-bold hover:bg-cyan-400 ml-4 shadow-lg drop-shadow-xl shadow-cyan-500"
                     >
                         <i class="fa-solid fa-id-card"></i> About me
                     </button>
                 </div>
 
                 {about && (
-                    <div className="text-gray-300 font-mono mb-4 mt-10">
+                    <div className="text-gray-300 font-mono mb-5 mt-10">
                         <h1 className="text-4xl font-bold text-gray-100 mb-4">
                             About Me
                         </h1>
@@ -137,7 +137,7 @@ function App() {
                         <ul className="text-gray-100">
                             {skills.map((skill) => (
                                 <li
-                                    className="mb-2 uppercase"
+                                    className="mb-5 uppercase"
                                     style={{ color: skill.color }}
                                     key={skill.id}
                                 >
