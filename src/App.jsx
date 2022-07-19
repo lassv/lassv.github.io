@@ -108,13 +108,13 @@ function App() {
                 <div>
                     <Link
                         to={"/projects"}
-                        className="px-10 py-3 bg-indigo-600 rounded font-bold hover:bg-indigo-500 ml-4 shadow-lg drop-shadow-xl shadow-indigo-500"
+                        className="px-10 py-3 bg-indigo-600 rounded font-bold hover:bg-indigo-500 ml-4 shadow-lg drop-shadow-2xl shadow-indigo-500"
                     >
                         <i class="fa-solid fa-code"></i> My projects
                     </Link>
                     <button
                         onClick={() => setAbout(!about)}
-                        className="px-10 py-3 bg-cyan-500 rounded font-bold hover:bg-cyan-400 ml-4 shadow-lg drop-shadow-xl shadow-cyan-500"
+                        className="px-10 py-3 bg-cyan-500 rounded font-bold hover:bg-cyan-400 ml-4 shadow-lg drop-shadow-2xl shadow-cyan-500"
                     >
                         <i class="fa-solid fa-id-card"></i> About me
                     </button>
