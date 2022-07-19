@@ -21,6 +21,16 @@ function Projects() {
             url: "https://niels-it.netlify.app",
             github: "https://github.com/lassv/niels-it",
         },
+
+        {
+            id: 3,
+            name: "Forumerly",
+            description:
+                "Open source forum, where you can discuss anything you want. (Danish language)",
+            image: "https://forumerly.up.railway.app/logo.png",
+            url: "https://forumerly.up.railway.app",
+            github: "https://github.com/hypll/forumerly",
+        },
     ];
 
     return (
