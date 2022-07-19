@@ -11,6 +11,16 @@ function Projects() {
             url: "https://www.facilecss.com",
             github: "https://github.com/facilecss/core",
         },
+
+        {
+            id: 2,
+            name: "Niels-IT",
+            description:
+                "Im created a website for my dads freind, and he have his own small IT company, called `Niels-IT`.",
+            image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngarts.com%2Ffiles%2F1%2FIT-Transparent-Image.png&f=1&nofb=1",
+            url: "https://niels-it.netlify.app",
+            github: "https://github.com/lassv/niels-it",
+        },
     ];
 
     return (
